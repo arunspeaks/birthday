@@ -86,25 +86,18 @@ export default function BirthdayCelebration() {
 
           {/* Card content */}
           <AnimatePresence>
-            {isCardOpen && (
-              <motion.div
-                className="absolute inset-0 rounded-3xl p-4 shadow-xl shadow-rose-100 flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat max-[350px]:-top-6 max-[350px]:min-h-[275px]"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('src/herphoto.jpg')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-                initial={{ rotate: 2, rotateX: -90, opacity: 0 }}
-                animate={{
-                  rotate: isCardOpen ? 0 : 2,
-                  rotateX: isCardOpen ? 0 : -90,
-                  opacity: isCardOpen ? 1 : 0,
-                  zIndex: isCardOpen ? 10 : -1,
-                }}
-                exit={{ rotateX: -90, opacity: 0 }}
-                transition={{ duration: 0.5 }}
-              >
+            {isCardOpen && <motion.div
+              className="absolute inset-0 bg-white max-[350px]:-top-6 max-[350px]:min-h-[275px] rounded-3xl p-4 shadow-xl shadow-rose-100 flex flex-col items-center justify-center"
+              initial={{ rotate: 2, rotateX: -90, opacity: 0 }}
+              animate={{
+                rotate: isCardOpen ? 0 : 2,
+                rotateX: isCardOpen ? 0 : -90,
+                opacity: isCardOpen ? 1 : 0,
+                zIndex: isCardOpen ? 10 : -1,
+              }}
+              exit={{ rotateX: -90, opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
                 <div className="text-center">
                   <p className="text-purple-700 mb-2 font-medium">
                     Just wanted to remind you — you’re truly my favorite person

@@ -109,7 +109,7 @@ export default function BirthdayCelebration() {
                 <div className="absolute inset-0 bg-white/50 rounded-3xl"></div>
 
                 <div className="relative text-center max-w-sm z-10">
-                  <p className="text-white-700 mb-4 text-sm sm:text-base leading-relaxed">
+                  <p className="text-black-700 mb-4 text-sm sm:text-base leading-relaxed">
                     Just wanted to remind you — you’re truly my favorite person in this whole wide world. 💫
                     My days shine brighter, my smiles grow wider, and everything feels a little more beautiful
                     because of you. 🌸💖 You’re not just my bestie — you’re my comfort, my laughter, and my forever
